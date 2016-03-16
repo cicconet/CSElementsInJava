@@ -17,17 +17,17 @@ public class Main {
 						{0, 0, 1, 0, 0, 0, 0, 0}};
 
 	public static void main(String[] args) {
-		int root = 1;
+		int root = 0;
 		
-		System.out.println("depth-first search from node index "+root);
-		dfs(root);
+		System.out.println("depth-first traversal from node index "+root);
+		dft(root);
 		
-		System.out.println("bredth-first search from node index "+root);
-		bfs(root);
+		System.out.println("bredth-first traversal from node index "+root);
+		bft(root);
 	}
 	
-	// depth-first search
-	static void dfs(int root) {
+	// depth-first traversal
+	static void dft(int root) {
 		Stack<Integer> s = new Stack<Integer>();
 		int l = G.length;
 		int[] visited = new int[l];
@@ -54,8 +54,8 @@ public class Main {
 		}
 	}
 	
-	// breadth-first search
-	static void bfs(int root) {
+	// breadth-first traversal
+	static void bft(int root) {
 		Queue<Integer> q = new LinkedList<Integer>();
 		
 		int l = G.length;
