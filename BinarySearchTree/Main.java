@@ -75,6 +75,7 @@ public class Main {
 				root = null;
 			} else {
 				root = childOfV;
+				root.parent = null;
 			}
 		}
 	}
@@ -116,6 +117,7 @@ public class Main {
 		preorder(u.left);
 		preorder(u.right);
 	}
+	
 	public void postorder(BinaryNode u){
 		if (u == null) return;
 		postorder(u.left);
